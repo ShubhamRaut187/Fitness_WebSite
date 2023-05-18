@@ -1,0 +1,15 @@
+#footer{
+    /* border:1px solid goldenrod; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer_section_heading{
+    color: goldenrod;
+}
+.footer_section_div >p {
+    color: white;
+    font-weight: 600;
+}

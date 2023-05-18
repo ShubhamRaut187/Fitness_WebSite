@@ -6,42 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train With Us</title>
     <link rel="stylesheet" href="styles/navbar.css">
-    <style>
-        *{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body{
-            background-color: black;
-        }
-        #headings{
-            color: gray;
-            text-align: center;
-        }
-        #dmt_div{
-            /* border: 2px solid white; */
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            gap:5px;
-        }
-        .dmt_card{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            /* border: 2px solid white; */
-            padding: 15px;
-        }
-        .dmt_card>p{
-            color: white;
-            font-weight: 600;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/trainwithus.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
     <div id="navbar">
         <div id="nav_logo_div">
-            <img src="https://th.bing.com/th?id=OIP.OK9_rtCair2PEugAGqQkiwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="logo">
+            <img id="navbar_logo"src="https://th.bing.com/th?id=OIP.OK9_rtCair2PEugAGqQkiwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="logo">
         </div>
         <div id="nav_button">
         <button>Own a Franchise</button>
@@ -52,7 +23,7 @@
         <button>Try Us</button>
         </div>
     </div>
-    <h1 id="headings">DYNAMIC MOVEMENT TRAINING (DMT)</h1>
+    <h1 class="headings">DYNAMIC MOVEMENT TRAINING (DMT)</h1>
     <div id="dmt_div">
         <div class="dmt_card">
             <img src="https://fitnessfirst.net.in/sites/default/files/dynamic_movement_training/freestyle-1400x650.jpg" alt="1">
@@ -87,5 +58,107 @@
             <p>Whatever you want from a workout, make DMT part of your training programme for quicker and more effective results.</p>
         </div>
     </div>
+    <h1 class="headings">FREESTYLE™</h1>
+    <div id="freestyle_main">
+        <h3 id="freestyle_description">Our dedicated Freestyle™ areas and fitness experts can help you discover new training techniques and exercises that offer a dynamic and efficient full-body workout.</h3>
+        <div id="freestyle_img_div">
+            <img src="https://fitnessfirst.net.in/sites/default/files/dynamic_movement_training/130926_001_1515_rgb.jpg" alt="1">
+            <img src="https://fitnessfirst.net.in/sites/default/files/dynamic_movement_training/freestyle-3.jpg" alt="2">
+            <img src="https://fitnessfirst.net.in/sites/default/files/dynamic_movement_training/freestyle-15.jpg" alt="3">
+        </div>
+    </div>
+    <div id="training_categories_main">
+        <div class="training_category_card">
+            <div class="training_category_card_sub1">
+                <h2>FREESTYLE™ GROUP TRAINING</h2>
+                <p>Find motivation from training with others for an efficient and progressive workout. Offering interactive and energetic sessions, Freestyle™ Group Training incorporates the latest equipment and trained fitness staff. These classes are a great way to work the whole body and improve overall fitness.</p>
+            </div>
+            <div class="training_category_card_sub2">
+                <img src="https://fitnessfirst.net.in/sites/default/files/dynamic_movement_training/freestyle-20_web_600_x_4001.jpg" alt="freestyle">
+            </div>
+        </div>
+        <div class="training_category_card">
+            <div class="training_category_card_sub2">
+                <img src="https://fitnessfirst.net.in/sites/default/files/clubs/gx-body-attack-3-600x400.png" alt="Group Exercise">
+            </div>
+            <div class="training_category_card_sub1">
+                <h2>GROUP EXERCISE CLASSES</h2>
+                <p>Our range of classes will inspire you to explore new training styles and techniques, while keeping you motivated with other like-minded members. We have a wide choice of classes that are a great complement to any training programme. See our class timetable for details.</p>
+            </div>
+        </div>
+        <div class="training_category_card">
+            <div class="training_category_card_sub1">
+                <h2>CARDIO TRAINING</h2>
+                <p>Whether you want increased energy or reduced stress, cardio training (otherwise known as cardiovascular or CV training) helps you live a fitter life while strengthening your heart and lungs. From interval workouts to endurance exercises, cardio training can also help to lower blood pressure and cholesterol levels.</p>
+            </div>
+            <div class="training_category_card_sub2">
+                <img src="https://fitnessfirst.net.in/sites/default/files/dynamic_movement_training/staff-_-member-gym-floor-1-600x400.jpg" alt="Cardio">
+            </div>
+        </div>
+        <div class="training_category_card">
+            <div class="training_category_card_sub2">
+                <img src="https://fitnessfirst.net.in/sites/default/files/dynamic_movement_training/pt-_-member-5-600x400.jpg" alt="Strength Exercise">
+            </div>
+            <div class="training_category_card_sub1">
+                <h2>STRENGTH TRAINING</h2>
+                <p>Shape your body and burn fat with strength training. With the right equipment such as free weights or resistance machines and advice from our experts, you can improve your overall health while increasing muscle and bone strength.</p>
+            </div>
+        </div> 
+        <div class="training_category_card">
+            <div class="training_category_card_sub1">
+                <h2>ONE-TO-ONE TRAINING</h2>
+                <p>Tailored specifically around your individual fitness, one-to-one personal training ensures you get the most out of every workout. Our expert personal trainers can offer support, advice and motivation to keep you on the right track.</p>
+            </div>
+            <div class="training_category_card_sub2">
+                <img src="https://fitnessfirst.net.in/sites/default/files/dynamic_movement_training/pt-_-member-6-600x400.jpg" alt="Cardio">
+            </div>
+        </div>   
+    </div>
+    <div id="quote_trainwithus">
+        <img src="https://images-cdn.ubuy.co.in/6352404d0d47a8616f29ec12-stay-ready-banner-home-gym-decor.jpg" alt="quote">
+    </div>
+    <div id="footer">
+        <div class="footer_section_div">
+            <h3 class="footer_section_heading">ABOUT US</h3>
+            <p>Company background</p>
+            <p>Careers</p>
+            <p>Press room</p>
+            <p>Reviews & Testimonials</p>
+        </div>
+        <div class="footer_section_div">
+            <h3 class="footer_section_heading">MEMBERSHIP</h3>
+            <p>Membership options</p>
+            <p>Membership benefits</p>
+            <p>Corporate membership</p>
+            <p>Frequently asked questions</p>
+        </div>
+        <div class="footer_section_div">
+            <h3 class="footer_section_heading">CLUBS</h3>
+            <p>Club finder</p>
+            <p>Club operating hours</p>
+            <p>Get 1 Day Free Pass</p>
+            <p>Club Facilities</p>
+        </div>
+        <div class="footer_section_div">
+            <h3 class="footer_section_heading">POLICIES & LEGAL</h3>
+            <p>Privacy policy</p>
+            <p>Terms & Conditions - Website</p>
+            <p>Terms & Conditions - Members</p>
+            <p>Labour Compliance Documents</p>
+        </div>
+        <div class="footer_section_div">
+            <h3 class="footer_section_heading">CUSTOMER SERVICE</h3>
+            <p>Members' Area</p>
+            <p>FAQs</p>
+            <p>Contact us</p>
+            <p>Membership Enquiry</p>
+        </div>
+    </div>
 </body>
 </html>
+<script>
+    let gotoHome = ()=>{
+    window.location="index.html";
+}
+let Home = document.getElementById("navbar_logo").addEventListener("click",gotoHome);
+</script>

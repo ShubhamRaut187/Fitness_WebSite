@@ -1,0 +1,83 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+}
+.headings{
+    color: gray;
+    text-align: center;
+    margin-bottom: 0px;
+}
+#dmt_div{
+    /* border: 2px solid white; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:5px;
+}
+.dmt_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+    padding: 15px;
+}
+.dmt_card>p{
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+#freestyle_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+    
+}
+#freestyle_description{
+    color: gray;
+    text-align: center;
+}
+.freestyle_img_div{
+    display: flex;
+    column-gap: 20px;
+}
+#training_categories_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 40px auto;
+}
+.training_category_card{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 40px;
+   padding: 10px;
+}
+.training_category_card_sub1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.training_category_card_sub1 > h2{
+    color: goldenrod;
+}
+.training_category_card_sub1 > p{
+    color: white;
+    font-weight: 600;
+    text-align: justify;
+}
+#quote_trainwithus{
+    margin: auto;
+    width: 80%;
+    height: 200px;
+}
+#quote_trainwithus > img{
+    width: 100%;
+    height: 100%;
+}
