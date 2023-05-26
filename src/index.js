@@ -7,7 +7,7 @@ let SlideShow = ()=>{
     let images = [
         "https://www.fitnessfirst.net.in/try-us/img/Try-Us-Banner.png",
         "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/ac8765105077959.5fb685bdd629e.jpg",
-        "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/fitness-exercise-club-design-template-f3ff2f62fe7b52e79008c0176704b34b_screen.jpg?ts=1647247670",
+        "https://img.freepik.com/premium-vector/powerful-3d-barbell-fitness-banner_317810-4503.jpg",
         "https://s3.envato.com/files/252307252/Preview%20images%20set/1.png",
     ]
 
