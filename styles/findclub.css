@@ -1,0 +1,121 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+}
+#findclub_heading{
+    text-align: center;
+    margin: 20px auto;
+}
+#findclub_heading > h1{
+    color: gray;
+    margin-bottom: 0px;
+}
+#findclub_heading > h3{
+    color: gray;
+    margin-top: 0px;
+}
+#filters_div{
+    margin: 40px auto;
+    width: 50%;
+    /* border:2px solid white; */
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#fiter_search_bar{
+    width: 30%;
+    height: 25px;
+    border: 1px solid gray;
+    /* border-radius: 8px; */
+    color: goldenrod;
+    font-weight: 600;
+    text-align: center;
+    background-color: black;
+}
+#city_options{
+    width: 30%;
+    height: 25px;
+    color: gray;
+    font-weight: 600;
+    text-align: center;
+    background-color: black;
+    border: 1px solid gray;
+    /* border-radius: 8px; */
+}
+.filter_label{
+    color: gray;
+    font-weight: 600;
+}
+#clubs_parent{
+    /* border: 2px solid white; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 15px;
+    width: 70%;
+    padding: 20px;
+    margin: auto;
+}
+.club_card{
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+.clubcard_img_div{
+    /* border: 2px solid white; */
+    width: 25%; 
+    height: 250px;
+    width: 30%;
+    border-radius: 8px;
+}
+.clubcard_img_div > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.clubcard_details_div{
+    /* border: 2px solid white; */
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.clubcard_details_div > h2{
+    color: goldenrod;
+    margin-bottom: 0px;
+}
+.clubcard_details_div > h3{
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.clubcard_details_div > button{
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: black;
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+.clubcard_details_div > button:hover{
+    background-color: goldenrod;
+    color: black;
+}
+#quote{
+    margin: auto;
+    width: 80%;
+    height: 200px;
+}
+#quote > img{
+    width: 100%;
+    height: 100%;
+}

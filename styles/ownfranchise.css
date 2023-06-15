@@ -1,0 +1,160 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+}
+#Franchise_Parent{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+}
+#Franchise_Parent >h3{
+    color: gray;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#Franchise_Parent > h1{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    color: gray;
+}
+#company_info_parent{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.company_info_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 2px solid goldenrod;
+    border-left: 2px solid goldenrod;
+    border-right: 2px solid goldenrod;
+    border-bottom: 8px solid goldenrod;
+    width: 30%;
+    border-radius: 50%;
+    height: 150px;
+    transition: 1s;
+
+}
+.company_info_card:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.company_info_card > h2{
+    margin-bottom: 0px;
+    color: goldenrod;
+}
+.company_info_card > h3{
+    margin-top: 0px;
+    color: goldenrod;
+}
+#city_parent{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.city_card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid goldenrod;
+    transition: 1s;
+}
+.city_card:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.city_card > img{
+    width: 100%;
+    height: 120px;
+}
+.city_card > h3{
+    color: goldenrod;
+    margin-bottom: 2px;
+}
+#club_pictures_parent{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin: 20px auto;
+}
+.club_card_picture{
+    transition: 1s;
+}
+.club_card_picture:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.club_card_picture > img{
+    width: 100%;
+}
+/* Form */
+#franchise_form{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.input_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    /* border: 2px solid white; */
+    width: 80%;
+}
+.input_card > label{
+    color: goldenrod;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.input_card > input{
+    width: 60%;
+    height: 20px;
+    border: 1px solid goldenrod;
+    background-color: black;
+    color: goldenrod;
+    font-weight: 600;
+    text-align: center;
+}
+.input_card > select{
+    width: 60%;
+    height: 25px;
+    border: 1px solid goldenrod;
+    background-color: black;
+    color: goldenrod;
+    font-weight: 600;
+    text-align: center;
+}
+#submit_btn{
+    background-color: goldenrod;
+    width: 20%;
+    height: 30px;
+    border-radius: 8px;
+    color: black;
+    font-weight: 700;
+    border: none;
+}
+#quote{
+    margin: auto;
+    width: 80%;
+    height: 200px;
+}
+#quote > img{
+    width: 100%;
+    height: 100%;
+}

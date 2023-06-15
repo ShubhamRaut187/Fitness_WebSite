@@ -5,7 +5,7 @@ let navbar = ()=>{
 <div id="nav_button">
 <button id="ownafranchise">Own a Franchise</button>
 <button id="trainwithus">Train With Us</button>
-<button>Club Finder</button>
+<button id="findclub_btn">Club Finder</button>
 <button>Class Timetable</button>
 <button>Membership</button>
 <button>Try Us</button>
