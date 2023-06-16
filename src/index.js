@@ -39,5 +39,9 @@ let gotoTrainWithUs = ()=>{
 let gotoFindclub = () => {
     window.location="findclub.html";
 }
+let gotoSignup = () => {
+    window.location="signup.html"
+}
 let TrainWithUs = document.getElementById("trainwithus").addEventListener("click",gotoTrainWithUs);
 let FindClub = document.getElementById("findclub_btn").addEventListener("click",gotoFindclub)
+let SignUp = document.getElementById("Sign-Up_btn").addEventListener("click",gotoSignup);

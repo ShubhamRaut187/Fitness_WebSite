@@ -1,0 +1,77 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+}
+#signup_main{
+    width: 90%;
+    border: 2px solid black;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#signup_main > h1{
+    color: gray;
+}
+#signup_main > h3{
+    color: gray;
+}
+#signup_main  a{
+    text-decoration: none;
+    color: goldenrod;
+}
+form{
+    width: 50%;
+    border: 2px solid black;
+}
+#input_parent{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+.sigup_input_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sigup_input_card > label{
+    color: goldenrod;
+    font-weight: 700;
+}
+.sigup_input_card > input{
+    border: 1px solid goldenrod;
+    background-color: black;
+    text-align: center;
+    font-weight: 700;
+    height: 25px;
+    color: goldenrod;
+}
+#submit_btn{
+    margin: 20px 231px;
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    border: 2px solid goldenrod;
+    color: goldenrod;
+    background-color: black;
+    font-weight: 700;
+    font-size: 16px;
+}
+#submit_btn:hover{
+    background-color:goldenrod;
+    color: black;
+}
+#quote{
+    margin: auto;
+    width: 80%;
+    height: 200px;
+}
+#quote > img{
+    width: 100%;
+    height: 100%;
+}

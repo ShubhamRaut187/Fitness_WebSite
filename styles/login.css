@@ -1,0 +1,67 @@
+body{
+    background-color: black;
+}
+#login_main{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#login_main > h1{
+    color: gray;
+}
+form{
+    border: 2px solid black;
+    
+}
+#input_parent{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 15px;
+}
+.login_input_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login_input_card > input{
+    /* background-color: black; */
+    border: 1px solid goldenrod;
+    text-align: center;
+    font-weight: 700;
+    color: goldenrod;
+    height: 20px;
+    background-color: black;
+}
+.login_input_card > label{
+    color: goldenrod;
+    font-weight: 700;
+
+}
+#submit_btn{
+    width: 100%;
+    height: 30px;
+    border: 1px solid goldenrod;
+    background-color: black;
+    color: goldenrod;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    margin: 15px auto;
+}
+#submit_btn:hover{
+    background-color: goldenrod;
+    color: black;
+}
+#quote{
+    margin: auto;
+    width: 80%;
+    height: 200px;
+}
+#quote > img{
+    width: 100%;
+    height: 100%;
+}
