@@ -22,6 +22,12 @@ let FindClub = document.getElementById("findclub_btn").addEventListener("click",
 
 
 // Page Functions
+let ShowClubDetails = (data)=>{
+    localStorage.setItem("club_info",JSON.stringify(data));
+    window.location = "clubdetails.html"
+}
+
+
 let displayClubs = (clubs)=>{
     document.querySelector("#clubs_parent").textContent="";
     clubs.map((elem,index)=>{
@@ -48,6 +54,9 @@ let displayClubs = (clubs)=>{
 
         let details_btn = document.createElement("button");
         details_btn.textContent = "View Club Details"
+        details_btn.addEventListener("click",()=>{
+            ShowClubDetails(elem);
+        })
 
         clubdetailsdiv.append(clubname,membership,details_btn);
         clubcard.append(clubimagediv,clubdetailsdiv);
