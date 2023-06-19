@@ -6,7 +6,6 @@ let navbar = ()=>{
 <button id="ownafranchise">Own a Franchise</button>
 <button id="trainwithus">Train With Us</button>
 <button id="findclub_btn">Club Finder</button>
-<button>Membership</button>
 <button id="Sign-Up_btn">Sign-Up</button>
 </div>
 `

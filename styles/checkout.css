@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: rgb(239,247,250);
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    height: 65px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.headerImg{
+    width: 152px;
+    height: 29px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.arrow{
+    margin-left: 100px;
+    margin-top: 15px;
+    height: 29px;
+    cursor: pointer;
+}
+.cartProgress{
+    display: flex;
+    width: 300px;
+    height: 100%;
+   
+    padding-right: 35px;
+}
+
+.one-before-img{
+    width: 39px;
+    height: 39px;
+    margin-top: 11px;
+}
+
+.two-disabled-img{
+    margin-left: 30px;
+    width: 38px;
+    height: 38px;
+    margin-top: 12px;
+}
+
+.address{
+    margin-left: 5px;
+    margin-top: 21px;
+    font-size: 15px;
+    color: rgb(3, 201, 3);
+    font-weight: bold;
+}
+
+.payment{
+    margin-left: 5px;
+    margin-top: 21px;
+    font-size: 15px; 
+}
+.container{
+    margin: auto;
+    width: 1336px;
+    height: 440px;
+    margin-top: 15px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+.paymentSelectionDiv{
+    width: 360px;
+    height: 386px;
+    
+}
+
+.paymentSelectionDiv>h3{
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.paymentSelectionDiv>div{
+    margin-left: 40px;
+    width: 320px;
+    border: 1px solid transparent;
+}
+
+.paymentSelectionDiv p{
+    font-size: 14px;
+    line-height: 15px;
+    padding-left: 15px;
+}
+#paymentMethodDiv{
+    margin-top: 10px;
+    width: 430px;
+    height: 415px;
+    margin-left: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+
+.offersDiv{
+    width: 412px;
+}
+
+.offersDiv>h3{
+    margin-left: 30px;
+}
+
+.offers{
+    border: 1px dashed #00bc71;
+    width: 304px;
+    height: 219px;
+    margin-left: 30px;
+}
+
+.offers>div{
+    margin-top: 10px;
+    display: flex;
+    width: 302px;
+    height: 52px;
+}
+
+.offers>div>p{
+    font-size: 12px;
+    line-height: 17px;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+.mobiqwikImg{
+    margin-top: 17px;
+    height: 22px;
+    margin-left: 20px;
+}
+
+.airtelImg{
+    margin-top: 14px;
+    height: 41px;
+    margin-left: 20px;
+}
+
+.dhaniImg{
+    margin-top: 15px;
+    height: 9.79px;
+    margin-left: 20px;
+}
+.methodName{
+    text-align: center;
+}
+.methodDiv{
+    border: 1px solid gray;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: -20px
+}
+.paymentMethodDiv>div{
+    border: 1px solid rgb(210,210,210);
+}
+
+.paymentMethodDiv>div>div{
+    margin-top: 35px;
+    margin-left: 15px;
+}
+
+.methodDiv{
+    margin-top: 45px;
+    width: 390px;
+    height: 280px;
+    margin-left: 25px;
+}
+
+.cardNumberDiv{
+    width: 360px;
+    height: 28px;
+    margin-bottom: 10px;
+}
+
+.cardNumber{
+    width: 97.5%;
+    font-size: 14px;
+    height: 80%;
+    border: 0px;
+    border-bottom: 1px solid rgb(210,210,210);
+}
+
+.cardNumber:focus{
+    outline: none;
+    border-bottom: 1px solid rgb(18, 198, 235);
+}
+
+.cardDiv2{
+    width: 360px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cardDateDiv{
+    width: 105px;
+    display: flex;
+}
+
+.cardCvvDiv{
+    width: 60px;
+}
+
+.cardMonth{
+    width: 97.5%;
+    font-size: 14px;
+    height: 80%;
+    width: 40px;
+    margin-right: 10px;
+    border: 0px;
+    border-bottom: 1px solid rgb(210,210,210);
+}
+
+.cardMonth:focus{
+    outline: none;
+    border-bottom: 1px solid rgb(18, 198, 235);
+}
+
+.cardYear{
+    width: 97.5%;
+    font-size: 14px;
+    height: 80%;
+    width: 40px;
+    margin-left: 10px;
+    border: 0px;
+    border-bottom: 1px solid rgb(210,210,210);
+}
+
+.cardYear:focus{
+    outline: none;
+    border-bottom: 1px solid rgb(18, 198, 235);
+}
+
+.slash{
+    font-size: 22px;
+}
+
+.cardCvv{
+    width: 97.5%;
+    font-size: 14px;
+    height: 80%;
+    width: 50px;
+    border: 0px;
+    border-bottom: 1px solid rgb(210,210,210);
+}
+
+.cardCvv:focus{
+    outline: none;
+    border-bottom: 1px solid rgb(18, 198, 235);
+}
+
+.cardNameDiv{
+    width: 360px;
+    height: 28px;
+    margin-bottom: 30px;
+}
+
+.cardName{
+    width: 97.5%;
+    font-size: 14px;
+    height: 80%;
+    border: 0px;
+    border-bottom: 1px solid rgb(210,210,210);
+}
+
+.cardName:focus{
+    outline: none;
+    border-bottom: 1px solid rgb(18, 198, 235);
+}
+
+.cardPayDiv{
+    width: 360px;
+    height: 45px;
+    margin-bottom: 30px;
+}
+
+.cardPay{
+    width: 360px;
+    height: 45px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    border: 0px;
+    background-image: linear-gradient(0deg,#ff934b 0%,#ff5e62 100%);
+    box-shadow: 0px 2px 8px 0px rgb(255 97 98 / 46%);
+    border-radius: 3px;
+    cursor: pointer;
+}
+#codPay{
+    width: 360px;
+    height: 45px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    border: 0px;
+    background-image: linear-gradient(0deg,#ff934b 0%,#ff5e62 100%);
+    box-shadow: 0px 2px 8px 0px rgb(255 97 98 / 46%);
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.securityImg{
+    margin-left: 90px;
+}

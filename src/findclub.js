@@ -10,15 +10,24 @@ let clubsdata = [];
 let gotoHome = ()=>{
     window.location="index.html";
 }
+let Home = document.getElementById("navbar_logo").addEventListener("click",gotoHome);
+
 let gotoTrainWithUs = ()=>{
     window.location = "trainwithus.html";
 }
 let gotoFindclub = () => {
     window.location="findclub.html";
 }
-let Home = document.getElementById("navbar_logo").addEventListener("click",gotoHome);
+let gotoOwnafranchise = () =>{
+    window.location="ownfranchise.html";
+}
+let gotoSignUp = ()=>{
+    window.location = "signup.html";
+}
 let TrainWithUs = document.getElementById("trainwithus").addEventListener("click",gotoTrainWithUs);
 let FindClub = document.getElementById("findclub_btn").addEventListener("click",gotoFindclub)
+let OwnFranchise = document.getElementById("ownafranchise").addEventListener("click",gotoOwnafranchise);
+let SignUp = document.getElementById("Sign-Up_btn").addEventListener("click",gotoSignUp);
 
 
 // Page Functions

@@ -18,6 +18,7 @@ let AuthenticateUser=(Users,Email,Password)=>{
     }
     else if(Password === req_passwd){
         alert("Login Successful");
+        localStorage.setItem("isLoggedin","yes");
         window.location = "index.html"
     }
     else{
@@ -34,9 +35,34 @@ let getUser=()=>{
     }).then((response)=>{
         console.log(response);
         AuthenticateUser(response,Email,Password);
+        document.getElementById("login_Email").value="";
+        document.getElementById("login_Password").value="";
     }).catch((error)=>{
         console.log(error);
     })
 
 }
 document.querySelector("form").addEventListener("submit",getUser);
+
+//Nav
+let gotoHome = ()=>{
+    window.location="index.html";
+}
+let Home = document.getElementById("navbar_logo").addEventListener("click",gotoHome);
+
+let gotoTrainWithUs = ()=>{
+    window.location = "trainwithus.html";
+}
+let gotoFindclub = () => {
+    window.location="findclub.html";
+}
+let gotoOwnafranchise = () =>{
+    window.location="ownfranchise.html";
+}
+let gotoSignUp = ()=>{
+    window.location = "signup.html";
+}
+let TrainWithUs = document.getElementById("trainwithus").addEventListener("click",gotoTrainWithUs);
+let FindClub = document.getElementById("findclub_btn").addEventListener("click",gotoFindclub)
+let OwnFranchise = document.getElementById("ownafranchise").addEventListener("click",gotoOwnafranchise);
+let SignUp = document.getElementById("Sign-Up_btn").addEventListener("click",gotoSignUp);

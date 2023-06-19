@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="./styles/ownfranchise.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("2T7BxJrpmvermuhst");
+   })();
+</script>
 </head>
 <body>
     <div id="navbar">
@@ -81,19 +89,19 @@
         <form id="franchise_form">
             <div class="input_card">
                 <label>Name*</label>
-                <input type="text">
+                <input type="text" id="Name">
             </div>
             <div class="input_card">
                 <label>Email*</label>
-                <input type="email">
+                <input type="email" id="Email">
             </div>
             <div class="input_card">
                 <label>Contact Number*</label>
-                <input type="number">
+                <input type="number" id="ContactNumber">
             </div>
             <div class="input_card">
                 <label>Select City*</label>
-                <select>
+                <select id="City">
                     <option value="Pune">Pune</option>
                     <option value="Mumbai">Mumbai</option>
                     <option value="Banglore">Banglore</option>
@@ -104,7 +112,7 @@
             </div>
             <div class="input_card">
                 <label>Select Capital Investment*</label>
-                <select>
+                <select id="Capital">
                     <option value="">Select Capital</option>
                     <option value="2000000">20 Lakh</option>
                     <option value="5000000">50 Lakh and Above</option>

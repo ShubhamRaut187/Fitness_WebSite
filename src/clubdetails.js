@@ -6,7 +6,7 @@ nav.innerHTML = navbar();
 foot.innerHTML = footer();
 let club_data = JSON.parse(localStorage.getItem("club_info"));
 let plansarr = [];
-
+let isLoggedin = localStorage.getItem("isLoggedin");
 
 let slideImage = ()=>{
     
@@ -35,6 +35,18 @@ let getPlans = () =>{
         console.log(error);
     })
 }
+
+let becomemember = (data) =>{
+    if(isLoggedin === "yes"){
+        localStorage.setItem("SelectedClub",JSON.stringify(data));
+        window.location = "checkout.html"
+    }
+    else{
+        alert("You Have Not Logged In Please Login To Your Account Or Create New Account");
+        window.location = "signup.html";
+    }
+}
+
 getPlans();
 let displayClubDetails=(data)=>{
     
@@ -116,12 +128,18 @@ let displayClubDetails=(data)=>{
 
     let member_btn = document.createElement("button");
     member_btn.textContent = "Become a Member";
-
+    member_btn.addEventListener("click",()=>{
+        becomemember(data);
+    })
     club_info_div.append(club_name,Area_City,Club_facility,facilities,member_btn);
 
     document.querySelector("#clubdetails_parent").append(image_slider_div,slider_btns,club_info_div);
 
 
+}
+
+let storeplan=(data)=>{
+    localStorage.setItem("SelectedPlan",JSON.stringify(data));
 }
 
 let displayPlans = (data)=>{
@@ -141,6 +159,9 @@ let displayPlans = (data)=>{
 
         let select_btn = document.createElement("button");
         select_btn.textContent = "Select Plan";
+        select_btn.addEventListener("click",()=>{
+            storeplan(elem);
+        })
 
         plan_card.append(Plan,info,note,select_btn);
         document.querySelector("#plans").append(plan_card);
@@ -154,3 +175,26 @@ let counter = 0;
 slides.forEach((slide,index)=>{
     slide.style.left = `${index * 100}%`
 });
+
+//Nav
+let gotoHome = ()=>{
+    window.location="index.html";
+}
+let Home = document.getElementById("navbar_logo").addEventListener("click",gotoHome);
+
+let gotoTrainWithUs = ()=>{
+    window.location = "trainwithus.html";
+}
+let gotoFindclub = () => {
+    window.location="findclub.html";
+}
+let gotoOwnafranchise = () =>{
+    window.location="ownfranchise.html";
+}
+let gotoSignUp = ()=>{
+    window.location = "signup.html";
+}
+let TrainWithUs = document.getElementById("trainwithus").addEventListener("click",gotoTrainWithUs);
+let FindClub = document.getElementById("findclub_btn").addEventListener("click",gotoFindclub)
+let OwnFranchise = document.getElementById("ownafranchise").addEventListener("click",gotoOwnafranchise);
+let SignUp = document.getElementById("Sign-Up_btn").addEventListener("click",gotoSignUp);
