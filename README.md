@@ -1,4 +1,4 @@
-<h1Power House - A Website for gyms and fitness clubs</h1>
+<h1>Power House - A Website for gyms and fitness clubs</h1>
 <h3>Description</h3>
 <p>The objective of this project is to develop a dynamic and visually appealing website for a fitness club called Power House. The website will be built using HTML, CSS, and JavaScript to showcase the club's offerings, promote fitness programs, and engage with potential members.</p>
 <br/>
