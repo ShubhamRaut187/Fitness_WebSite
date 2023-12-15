@@ -41,7 +41,10 @@ function clicked3(){
 
 function debitDetails(){
     let amount=JSON.parse(localStorage.getItem("SelectedPlan"));
-    
+    let trainer = JSON.parse(localStorage.getItem("SelectedTrainer"));
+
+    let totalamount = amount.Price + trainer.Fees
+
     var paymentMethodDiv = document.querySelector("#paymentMethodDiv");
     paymentMethodDiv.innerHTML="";
     count++;
@@ -107,7 +110,7 @@ function debitDetails(){
 
     var cardPay = document.createElement('button');
     cardPay.setAttribute('class','cardPay');
-    cardPay.textContent = "Pay " +amount.Price ;
+    cardPay.textContent = "Pay " +totalamount ;
     cardPay.addEventListener('click',checkPay);
     function checkPay(){
         if(cardNumber.value !== ""  && cardMonth.value !== "" && cardYear.value !== "" && cardCvv.value !== "" ){
@@ -131,6 +134,9 @@ function debitDetails(){
 
 function creditDetails(){
     let amount=JSON.parse(localStorage.getItem("SelectedPlan"));
+    let trainer = JSON.parse(localStorage.getItem("SelectedTrainer"));
+
+    let totalamount = amount.Price + trainer.Fees
     var paymentMethodDiv = document.querySelector("#paymentMethodDiv");
     paymentMethodDiv.innerHTML="";
     count++;
@@ -200,7 +206,7 @@ function creditDetails(){
 
     var cardPay = document.createElement('button');
     cardPay.setAttribute('class','cardPay');
-    cardPay.textContent = "Pay "+amount.Price;
+    cardPay.textContent = "Pay "+totalamount;
     cardPay.addEventListener('click',checkPay);
 
     function checkPay(){
@@ -225,7 +231,10 @@ function creditDetails(){
 }
 
 function coddetails(){
-    let amount=localStorage.getItem("lastprice");
+    let amount=JSON.parse(localStorage.getItem("SelectedPlan"));
+    let trainer = JSON.parse(localStorage.getItem("SelectedTrainer"));
+
+    let totalamount = amount.Price + trainer.Fees
     var paymentMethodDiv = document.querySelector("#paymentMethodDiv");
     paymentMethodDiv.innerHTML="";
     
@@ -238,7 +247,7 @@ function coddetails(){
     
     var cardPay = document.createElement('button');
     cardPay.setAttribute('id','codPay');
-    cardPay.textContent = "Pay on Delivery : ("+amount+")";
+    cardPay.textContent = `Pay on Delivery : ${totalamount}`;
     cardPay.addEventListener('click',checkPay);
 
     function checkPay(){

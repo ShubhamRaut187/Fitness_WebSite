@@ -8,9 +8,11 @@ foot.innerHTML = footer();
 //Main
 let AuthenticateUser=(Users,Email,Password)=>{
     let req_passwd = "";
+    let User = {};
     Users.map((elem,index)=>{
         if(elem.Email === Email){
             req_passwd = elem.Password;
+            User = elem;
         }
     })
     if(req_passwd === ""){
@@ -18,7 +20,9 @@ let AuthenticateUser=(Users,Email,Password)=>{
     }
     else if(Password === req_passwd){
         alert("Login Successful");
-        localStorage.setItem("isLoggedin","yes");
+        localStorage.setItem("User",JSON.stringify(User));
+        localStorage.setItem('isLoggedin',"yes")
+        localStorage.setItem('ButtonName',"LogOut")
         window.location = "index.html"
     }
     else{
@@ -62,7 +66,28 @@ let gotoOwnafranchise = () =>{
 let gotoSignUp = ()=>{
     window.location = "signup.html";
 }
+let logout_op = () => {
+    localStorage.setItem('isLoggedin',null);
+    localStorage.setItem('User',null);
+    localStorage.setItem('ButtonName','Sign-Up');
+    location.reload();
+}
+let BtnToggle = localStorage.getItem("ButtonName");
+let ButtonName = "";
+let ButtonId = "";
+let func = "";
+if(BtnToggle === 'Sign-Up' || ButtonName === null){
+    ButtonId = 'Sign-Up_btn';
+    ButtonName = "Sign-Up";
+    func = gotoSignUp;
+}
+else{
+    ButtonId = 'logout_btn';
+    ButtonName = 'LogOut'
+    func = logout_op;
+}
+let SignUp = document.getElementById(ButtonId).addEventListener("click",func);
 let TrainWithUs = document.getElementById("trainwithus").addEventListener("click",gotoTrainWithUs);
 let FindClub = document.getElementById("findclub_btn").addEventListener("click",gotoFindclub)
 let OwnFranchise = document.getElementById("ownafranchise").addEventListener("click",gotoOwnafranchise);
-let SignUp = document.getElementById("Sign-Up_btn").addEventListener("click",gotoSignUp);
+// let SignUp = document.getElementById("Sign-Up_btn").addEventListener("click",gotoSignUp);
